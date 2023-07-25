@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="calculation">
+    <div class="Waste">
+        <div class="container">
+            <!-- <h4>What Type of Waste?</h4> -->
+            <div class="row">
+                <p>Solid Waste</p>
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="row">
+                <p>Dry Waste</p>
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="row">
+                <p>Wet Waste</p>
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="row">
+                <p>Bio Waste</p>
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="row">
+                <p>Non Bio Waste</p>
+                <label>
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+        </div>
+
+        <table class="table_cal">
+            <thead>
+                <!-- <tr class="heading">
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Net.. Price</th>
+                </tr> -->
+            </thead>
+            <tbody class="Quantity_cal">
+                <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)" ></td>
+                <td><input type="text" value="5" onkeyup="pricefunc(this)"></td>
+                <td class="netprice">0</td>
+                </tr>
+                <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" value="5" onkeyup="pricefunc(this)"></td>
+                <td class="netprice">0</td>
+                </tr>
+                <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" value="5" onkeyup="pricefunc(this)"></td>
+                <td class="netprice">0</td>
+                </tr>
+                <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" value="5" onkeyup="pricefunc(this)" ></td>
+                <td class="netprice">0</td>
+                </tr>
+                <tr>
+                <td><input type="text" onkeyup="quantityfunc(this)"></td>
+                <td><input type="text" value="5" onkeyup="pricefunc(this)"></td>
+                <td class="netprice">0</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <!-- <tr>.
+                    <td colspan="2">Total</td>
+                    <td id = "total"><span>₹</span>0</td>
+                </tr> -->
+            </tfoot>
+          </table>
+
+        </div> 
+        <div class="total">
+          <strong>Total Amount: ₹ <span class="" id="total">0</span></strong>
+        </div>
+    </div>
+          <script src="script.js"></script>
+ </body>
+ </html>
